@@ -21,6 +21,6 @@ app.listen(PORT, (err) => {
     if (err) {
         console.log("error", err);
     } else {
-        console.log("server is up and running" , PORT);
+        console.log("server is up and running", PORT);
     }
 })
