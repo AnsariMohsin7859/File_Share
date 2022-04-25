@@ -4,8 +4,6 @@ const mongoose = require("mongoose");
 require('dotenv').config()
 
 
-
-
 //create connection to database 
 let db = mongoose.connect(process.env.DB_URL, {}, (err) => {
     if (err) {

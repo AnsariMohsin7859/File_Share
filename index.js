@@ -13,6 +13,21 @@ const app = express();
 //middileware for converting data from json to js and js to json 
 app.use(express.json())
 
+const fileRouter = require ('./routes/files')
+
+app.use('/api' ,fileRouter )
+
+
+//sample for checking server connection 
+app.get('/get' , (req , res)=>{
+    console.log("working");
+    return res.send('working')
+})
+
+
+
+
+
 
 const PORT = process.env.PORT || 3000
 
